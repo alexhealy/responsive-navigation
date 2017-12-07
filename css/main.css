@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: 100/1.3 sans-serif;
+  font: normal 100%/1.3 sans-serif;
 }
 
 *, *::before, *::after {
@@ -32,6 +32,8 @@ h1 {
   font-size: 1.5rem;
 }
 
+
+
 nav ul {
   margin-left: 0;
   padding: 0;
@@ -42,7 +44,7 @@ nav li {
   text-align: left;
 }
 
-nav a{
+nav a {
   display: block;
   padding: .5em .75em;
   color: #333;
@@ -52,4 +54,22 @@ nav a{
 nav a:hover {
   background-color: #333;
   color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav li {
+    display: inline-block;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
 }
